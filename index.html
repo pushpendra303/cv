@@ -23,16 +23,27 @@
         }
         .img{
             display: flex;
-            width: 40%;
+            width: 60%;
             height: 70px;
             padding-left: 60px;
         }
-        .home{
+        .navbar{
             display: flex;
-            width: 60%;
             gap: 25px;
             padding-right: 50px;
            align-items: center;
+           
+        }
+        .navbar a{
+            text-decoration: none;
+        }
+        .navbar :hover{
+        
+           align-items: center;
+           text-decoration: none;
+           background-size: cover;
+           color: rgb(255, 81, 0);
+          
         }
         .contentimg{
             display: flex;
@@ -94,9 +105,15 @@
     padding-top: 30px;
     font-size: 40px;
     gap: 20px;
-   color: goldenrod;
-   
  }
+
+ .icon :hover{
+    display: flex;
+   
+    font-size: 40px;
+    gap: 20px;
+ }
+    
  .span1{
     display: flex;
     height: 40px;
@@ -111,21 +128,20 @@
 <body style=" font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">
 <div class="nav">
     <nav class="img">
-    <img src="img/logo.svg" alt="">
+    <img src="../logo.svg" alt="">
     </nav>
 
-    <div class="home">
-        <h3>Home</h3>
-        <h3>About</h3>
-        <h3>Service</h3>
-        <h3>portfolio</h3>
-        <h3>Testmonial</h3> 
-        <h3>Blog</h3>
-        <h3>Contect</h3>
-        <button style=" border: 0px;width: 110px; height: 40px; border-radius: 40px ; background-color: red; color: white;">Copmonents</button>
+    <div  class="navbar">
+       <a href=" #home"> <h3>Home</h3> </a>
+        <a href=" #about"> <h3>About </h3> </a>
+       <a href="#service"><h3>Service</h3></a>
+       <a href="#skills"> <h3>Skills</h3> </a>
+      <a href="#portfolio"> <h3>portfolio</h3> </a>
+       <a href="#contact"> <h3>Contect</h3> </a>
+        <!-- <button style=" border: 0px;width: 110px; height: 40px; border-radius: 40px ; background-color: red; color: white;">Copmonents</button> -->
     </div>
 </div>
-<div class="contentimg" >
+<div class="contentimg" id="home" >
     <div class="imgcontent" >
         <p>Hello i'm  </p> 
         <h1>PUSHPENDRA SINGH </h1> 
@@ -133,23 +149,23 @@
         <button style="background-color: red; color: white; border-radius: 20px; border: 0px; width: 90px; height: 40px;">HIRE ME</button>
         <button style="background-color: rgba(46, 45, 45, 0.918); color: white; border-radius: 20px; border: 0px; width: 120px; height: 40px;">DOWNLOAD CV</button>
         <div  class="icon">
-            <i class="fa-regular fa-envelope"></i>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-google-plus-g"></i>
-            <i class="fa-brands fa-twitter"></i>
+           <a href="https://github.com/pushpendra303" style="color: gold;"> <i class="fa-brands fa-github-alt"></i>  </i> </a>
+        <a href="https://www.facebook.com/pushpendrasingh.sisodiya.73   " style="color: gold"> <i class="fa-brands fa-facebook"></i> </a>
+        <a href=""style="color: gold" > <i class="fa-brands fa-linkedin" ></i> </a>
+        <a href="https://www.instagram.com/pushpendra_singh_sisodiya/" style="color: gold"> <i class="fa-brands fa-instagram"></i> </a>
             
         </div>
     </div>
     <div >
-        <img src="img/man.svg" class="imgtwo" alt="">
+        <img src="../man.svg" class="imgtwo" alt="">
     </div>
 </div>
 <hr>
 
-<div style="display: flex; width: 100%; padding-top: 8%;">
+<div style="display: flex; width: 100%; padding-top: 8%;" id="about">
 
     <div  class="img3">
-        <img src="img/IMG_20230118_214754.jpg" class="prfImg" width="80%" height="90%"   alt="">
+        <img src="../IMG_20230118_214754.jpg" class="prfImg" width="80%" height="90%"   alt="">
     </div>
     <div style="width: 70%; padding-right: 25px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
         <span style="font-size: 30px;"> PUSHPENDRA SINGH SISODIYA</span> <br>
@@ -165,14 +181,13 @@
     </div>
 </div>
 
-<div style="text-align: center;padding-top: 70px;">
+<div style="text-align: center;padding-top: 70px;" id="service">
    <span  style="color: grey; font-size: 15px; "> Service </span>  <br>
 <span style="font-size: 30px;"><b>What I Do</b></span> 
 <p style="font-size: 20px;"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. In alias dignissimos. <br>
 rerum commodi corrupti, temporibus non quam.</p>
 </div>
 <div class="icon" ><i class="fa-solid fa-signal-bars"></i></div>
-
 
 <div class="contenar">
     <div class="ui">  Ui/UX </div>
@@ -181,7 +196,7 @@ rerum commodi corrupti, temporibus non quam.</p>
     <div class="ui"> <i class="fa-solid fa-signal"></i> SEO </div>
 </div >
 
-<div style="padding-top: 170px; text-align: center;">
+<div style="padding-top: 120px; text-align: center; " id="skills">
    <h3 style="color:  grey; font-size: 20px;">Skills</h3> 
     <h1> Why Choose me</h1> 
     <p style="font-size: 20px;"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. In alias dignissimos.</p>
@@ -224,7 +239,7 @@ rerum commodi corrupti, temporibus non quam.</p>
 </div>
 </div>
 </div>
-<div style="text-align: center; padding-top: 200px; ">
+<div style="text-align: center; padding-top: 100px; " id="portfolio">
    <span style="color:  grey; font-size: 20px;"> Portfolio</span>
 <p style="font-size: 30px;">Check My Wonderful Works</p>
 <p style="font-size: 20px;"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. In alias dignissimos.</p>
@@ -233,22 +248,22 @@ rerum commodi corrupti, temporibus non quam.</p>
 
 <div style="width: 90%;height: 100%; display: flex; margin: 0 auto; ">
     <div style="width : 33%;height: 100%; padding: 20px;">
-        <div style="width: 100%;height: 50%; margin-bottom: 30px; "><img src="img/folio-1.jpg" width="100%" height="50%" alt=""></div>
-        <div style="width: 100%;height: 50%; "><img src="img/folio-2.jpg" width="100%" height="50%" alt=""></div>
+        <div style="width: 100%;height: 50%; margin-bottom: 30px; "><img src="../folio-1.jpg" width="100%" height="50%" alt=""></div>
+        <div style="width: 100%;height: 50%; "><img src="../folio-2.jpg" width="100%" height="50%" alt=""></div>
     </div>
 
     <div style="width : 33%;height: 100%; padding: 20px;">
-        <div style="width: 100%;height: 30%;margin-bottom: 30px; "><img src="img/folio-3.jpg" width="100%" height="50%" alt=""></div>
-        <div style="width: 100%;height: 70%; "><img src="img/folio-4.jpg" width="100%" height="50%" alt=""></div>
+        <div style="width: 100%;height: 30%;margin-bottom: 30px; "><img src="../folio-3.jpg" width="100%" height="50%" alt=""></div>
+        <div style="width: 100%;height: 70%; "><img src="../folio-4.jpg" width="100%" height="50%" alt=""></div>
     </div>
 
     <div style="width : 33%;height: 100%; padding: 20px;">
-        <div style="width: 100%;height: 50%;margin-bottom: 30px; "><img src="img/folio-5.jpg" width="100%" height="50%" alt=""></div>
-        <div style="width: 100%;height: 50%; "><img src="img/folio-6.jpg" width="100%" height="50%" alt=""></div>
+        <div style="width: 100%;height: 50%;margin-bottom: 30px; "><img src="../folio-5.jpg" width="100%" height="50%" alt=""></div>
+        <div style="width: 100%;height: 50%; "><img src="../folio-6.jpg" width="100%" height="50%" alt=""></div>
     </div>
 </div>
 
-<div style="text-align: center; padding-top: 50px; ">
+<div style="text-align: center; padding-top: 100px; " id="contact">
     <span style="color:  grey; font-size: 20px;">Contact </span>
     <p style="font-size: 30px;"> Get In Touch With Me </p>
     <p style="font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In alias dignissimos.</p>
@@ -264,7 +279,7 @@ rerum commodi corrupti, temporibus non quam.</p>
     <input style="height: 40px;" type="Enter email" placeholder="Enter email">
     <input style="height: 40px;" type="Password"  placeholder="Password">
     <input style="height: 100px;" type="Message" placeholder="Message" ></span>
-    <button style="background-color: rgba(243, 125, 14, 0.89); color: white; border: 0px;border-radius: 20px;height: 40px;">Send Message</button>
+    <button style="background-color: rgba(243, 125, 14, 0.89); color: white; border: 0px;border-radius: 40px;height: 40px;">Send Message</button>
     </div>
 
      <div style="width: 40%;  gap: 30px;  ">
@@ -272,18 +287,20 @@ rerum commodi corrupti, temporibus non quam.</p>
     <ins> 12345 Fake ST NoWhere AB Country </ins>
     <h2 style="color: red;"><i class="fa-duotone fa-mobile-screen-button"></i> Phone Number</h2>
     <ins>8982831303</ins>
-    <h2 style="color: red;"> <i class="fa-regular fa-envelope"></i>Email Address</h2>
+    <h2 style="color: red;"> <i class="fa-regular fa-envelope"></i> Email Address</h2>
     <ins>sisodiyapushpendra1996@gmail.com</ins>
     </div >
     </div>
 </div>
 
 <div style="display: flex; height: 100%; ">
-    <span style="padding-left: 150px; padding-top: 50px;">Copyright 2045 © PUSHPENDRA</span>
-    <span class="icon" style="padding-left: 600px;" >  <i class="fa-regular fa-envelope"></i>
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-google-plus-g"></i>
-        <i class="fa-brands fa-twitter"></i>
+    <span style="padding-left: 150px; padding-top: 50px; color: blue;">Copyright 2023 © PUSHPENDRA</span>
+    <span class="icon" style="padding-left: 600px;" >  
+        <a href="https://github.com/pushpendra303" style="color: gold;"> <i class="fa-brands fa-github-alt"></i>  </i> </a>
+        <a href="https://www.facebook.com/pushpendrasingh.sisodiya.73   " style="color: gold"> <i class="fa-brands fa-facebook"></i> </a>
+        <a href=""style="color: gold" > <i class="fa-brands fa-linkedin" ></i> </a>
+        <a href="https://www.instagram.com/pushpendra_singh_sisodiya/" style="color: gold"> <i class="fa-brands fa-instagram"></i> </a>
+               
         </span>
 </div>
 
